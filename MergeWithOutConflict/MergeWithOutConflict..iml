@@ -5,7 +5,7 @@
     <content url="file://$MODULE_DIR$/../MergeWithOutConflict">
       <sourceFolder url="file://$MODULE_DIR$/../MergeWithOutConflict/src" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="temurin-25" jdkType="JavaSDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
