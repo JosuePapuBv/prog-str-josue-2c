@@ -6,8 +6,7 @@ public class main {
     public static double UMBRAL_DESCUENTO=1000;
     public static double DESCUENTO=0.10;
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        double subtotal = obtenerDouble(sc,"Dame el subtotal de la compra");
+        Scanner sc = new Scanner(System.in);double subtotal = obtenerDouble(sc,"Dame el subtotal de la compra");
         double total = calcularTotal(subtotal);
         System.out.println("Total: "+total);
     }
