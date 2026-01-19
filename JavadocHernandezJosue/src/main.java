@@ -7,10 +7,10 @@ public class main{
         int opcionSeleccionada;
 
         /**
-         * Ciclo principal que muestra el menú y ejecuta la opción seleccionada.
+         * se muestra el menu donde debes de elegir la opcion de lo que quieres calcular .
          */
         do {
-            System.out.println("MENÚ PRINCIPAL");
+            System.out.println("¿Qué desea calcular?");
             System.out.println("1. Calcular Índice de Masa Corporal (IMC)");
             System.out.println("2. Calcular área de un rectángulo");
             System.out.println("3. Convertir °C a °F");
@@ -20,7 +20,7 @@ public class main{
             opcionSeleccionada = entrada.nextInt();
 
             /**
-             * Ejecuta la acción correspondiente a la opción seleccionada.
+             * Ejecuta la operacion de la opcion seleccionada por el usuario.
              */
             switch (opcionSeleccionada) {
                 case 1:
@@ -39,7 +39,7 @@ public class main{
                     System.out.println("Saliendo del programa...");
                     break;
                 default:
-                    System.out.println("Opción inválida, intenta de nuevo.");
+                    System.out.println("Opción inválida, elija una de las opciones.");
             }
             System.out.println();
         } while (opcionSeleccionada != 5);
@@ -49,7 +49,7 @@ public class main{
     /**
      * Calcula el Índice de Masa Corporal (IMC) a partir del peso y la estatura.
      *
-     * @param entrada Objeto Scanner para leer los datos ingresados por el usuario.
+     * @param entrada Objeto Scanner para leer los datos que ingresa el usuario.
      */
     public static void calcularImc(Scanner entrada) {
         System.out.print("Ingresa tu peso en kg: ");
@@ -63,7 +63,7 @@ public class main{
     /**
      * Calcula el área de un rectángulo a partir de su base y altura.
      *
-     * @param entrada Objeto Scanner para leer los datos ingresados por el usuario.
+     * @param entrada Objeto Scanner para leer los datos que ingresó el usuario.
      */
     public static void calcularAreaRectangulo(Scanner entrada) {
         System.out.print("Ingresa la base del rectángulo: ");
@@ -71,11 +71,11 @@ public class main{
         System.out.print("Ingresa la altura del rectángulo: ");
         double altura = entrada.nextDouble();
         double area = base * altura;
-        System.out.println("El área del rectángulo es " + area);
+        System.out.println("El área del rectángulo es: " + area);
     }
 
     /**
-     * Convierte una temperatura de grados Celsius a Fahrenheit.
+     * Convierte la temperatura de grados Celsius a Fahrenheit.
      *
      * @param entrada Objeto Scanner para leer los datos ingresados por el usuario.
      */
@@ -89,7 +89,7 @@ public class main{
     /**
      * Calcula el área de un círculo a partir de su radio.
      *
-     * @param entrada Objeto Scanner para leer los datos ingresados por el usuario.
+     * @param entrada Objeto Scanner para leer los datos que ingresó el usuario.
      */
     public static void calcularAreaCirculo(Scanner entrada) {
         System.out.print("Ingresa el radio del círculo: ");
