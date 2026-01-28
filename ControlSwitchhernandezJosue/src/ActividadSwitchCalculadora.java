@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class ActividadSwitchCalculadora {
-    public class Main {
         public static void main (String[] args){
             Scanner scanner = new Scanner(System.in);
             System.out.println(" 1) Sumar\n 2) restar\n 3) multiplicar\n 4)dividir");
@@ -61,4 +60,4 @@ public class ActividadSwitchCalculadora {
 
 
     }
-}
+
