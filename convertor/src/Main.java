@@ -20,12 +20,26 @@ public class Main {
             System.out.println("5) Salir");
             System.out.print("Elige una opcion: ");
 
-            opcion = sc.nextInt();
+            if (sc.hasNextInt()) {
+                opcion = sc.nextInt();
+            } else {
+                System.out.println("Debes ingresar un numero");
+                sc.next();
+                continue;
+            }
 
             if (opcion >= 1 && opcion <= 4) {
 
                 System.out.print("Ingresa el valor: ");
-                double valor = sc.nextDouble();
+
+                double valor;
+                if (sc.hasNextDouble()) {
+                    valor = sc.nextDouble();
+                } else {
+                    System.out.println("Debes ingresar un valor numerico");
+                    sc.next();
+                    continue;
+                }
 
                 if (opcion == 1) {
                     double resultado = (valor * 9 / 5) + 32;
