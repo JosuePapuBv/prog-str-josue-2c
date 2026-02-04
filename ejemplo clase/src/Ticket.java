@@ -30,7 +30,7 @@ public class Ticket {
     }
 
     public void imprimirTicket(double cantidad){
-        System.out.println("------Ticket------");
+        System.out.println("-----Ticket-----");
         System.out.println("La cantidad de articulos fue " +cantidad);
         System.out.println("El subtotal fue: " +this.subtotal);
         System.out.println("EL descuento calculado fue de: "+ this.descuentoCalculado);

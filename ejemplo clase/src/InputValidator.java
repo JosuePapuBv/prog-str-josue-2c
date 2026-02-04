@@ -9,9 +9,9 @@ public class InputValidator {
                 if(value > 0){
                     return value;
                 }
-                System.out.println("El numero no es positivo");
+                System.out.println("El numero no es positivo.");
             } else{
-                System.out.println("El valor no es numerico");
+                System.out.println("El valor no es numerico.");
                 sc.nextLine();
             }
         }
