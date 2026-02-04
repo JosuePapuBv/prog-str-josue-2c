@@ -1,15 +1,19 @@
 import java.util.Scanner;
-public class Main {
-    public static void main(String[] args) {
-        Ticket ticket = new Ticket();
-        inputValidator inputvalidator = new inputValidator();
+
+public static voi
+public class Main {d main(String[] args) {
+        Ticket ticket = new Ticket();//Declaracion un objeto
+        InputValidator inputValidator= new InputValidator();
         Scanner sc = new Scanner(System.in);
-        //I-p-0
-        //Input
-        int cantidad = inputvalidator.getValdInt("Ingresa la cantidad de articulos", sc);
-        //proceso
+//I-P-O
+
+//Input
+        int cantidad = inputValidator.getValdInt("Ingresa la cantidad de articulos",sc);
+//Process
         ticket.process(cantidad);
-        //Outpot
+
+//Output
         ticket.imprimirTicket(cantidad);
+
     }
 }
